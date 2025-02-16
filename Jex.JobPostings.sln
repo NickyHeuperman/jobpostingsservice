@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jex.JobPostings.API", "Jex.JobPostings.API\Jex.JobPostings.API.csproj", "{45BF8BEB-C20A-43B4-A2B4-B17C81E8152D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jex.JobPostings.Application", "Jex.JobPostings.Application\Jex.JobPostings.Application.csproj", "{BD126715-660B-492B-93AE-2ED333544081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jex.JobPostings.Domain", "Jex.JobPostings.Domain\Jex.JobPostings.Domain.csproj", "{D9502BDC-47A1-446E-B909-E92D2F7D9DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jex.JobPostings.Infrastructure", "Jex.JobPostings.Infrastructure\Jex.JobPostings.Infrastructure.csproj", "{FC861F8A-427F-4953-B875-0F1E73579E58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45BF8BEB-C20A-43B4-A2B4-B17C81E8152D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BF8BEB-C20A-43B4-A2B4-B17C81E8152D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BF8BEB-C20A-43B4-A2B4-B17C81E8152D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BF8BEB-C20A-43B4-A2B4-B17C81E8152D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD126715-660B-492B-93AE-2ED333544081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD126715-660B-492B-93AE-2ED333544081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD126715-660B-492B-93AE-2ED333544081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD126715-660B-492B-93AE-2ED333544081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9502BDC-47A1-446E-B909-E92D2F7D9DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9502BDC-47A1-446E-B909-E92D2F7D9DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9502BDC-47A1-446E-B909-E92D2F7D9DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9502BDC-47A1-446E-B909-E92D2F7D9DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC861F8A-427F-4953-B875-0F1E73579E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC861F8A-427F-4953-B875-0F1E73579E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC861F8A-427F-4953-B875-0F1E73579E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC861F8A-427F-4953-B875-0F1E73579E58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
