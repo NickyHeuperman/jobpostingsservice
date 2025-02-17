@@ -1,4 +1,5 @@
 using FluentValidation;
+using Jex.JobPostings.API.Validation;
 using Jex.JobPostings.Application;
 using Jex.JobPostings.Application.IRepository;
 using Jex.JobPostings.Application.IService;
@@ -6,6 +7,7 @@ using Jex.JobPostings.Application.QueryHandlers;
 using Jex.JobPostings.Application.Service;
 using Jex.JobPostings.Application.Validators;
 using Jex.JobPostings.Infrastructure;
+using Microsoft.AspNetCore.Diagnostics;
 using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
 
 namespace Jex.JobPostings.API;
@@ -24,7 +26,10 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddMediatR(configuration =>
-            configuration.RegisterServicesFromAssemblyContaining<CompanyQueryHandler>());
+        {
+            configuration.RegisterServicesFromAssemblyContaining<CompanyQueryHandler>();
+            configuration.AddOpenBehavior(typeof(ValidationBehavior<,>));
+        });
         builder.Services.AddValidatorsFromAssemblyContaining<CreateCompanyCommandValidator>();
         builder.Services.AddFluentValidationAutoValidation();
         
@@ -49,9 +54,9 @@ public class Program
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
-
+        app.UseRouting();
         app.MapControllers();
-
+        app.UseMiddleware<ValidationExceptionHandlingMiddleware>();
         app.Run();
     }
 }
